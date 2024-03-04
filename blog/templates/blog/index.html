@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}My Blo🆗g{% endblock %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/index.css" %}"> 
+{% endblock %}
+
+
+{% block content %}
+    <header id="main-navigation">
+        <h1>
+            <a id="main-link" href="">
+                DJ-BLOG
+            </a>
+        </h1>
+        <nav>
+            <a href="" id="all-posts-link">All Posts</a>
+        </nav>
+    </header>
+    <section id="welcome">
+        <header>
+            <img src="" alt="Edgard - The Author of this blog"/>
+            <h2>Django-Blog</h2>
+        </header>
+        <p>Hello World 🌐</p>        
+    </section>
+    <section id="latest-posts">
+        <h2>Lastest posts</h2>
+        
+        <ul>
+            <li>
+                <article class="post">
+                    <a>
+                        <img src="" alt="Whatever!"/>
+                        <div class="post__content">
+                            <h3>Hello</h3>
+                            <p>Peace & Love❤️🕊️☮️</p>
+                        </div>
+                    </a>
+                </article>
+            </li>
+        </ul>
+    </section>
+
+    <section id="about">
+        <h2>✅</h2>
+        <p>🆗</p>
+        <p>🆗</p>
+    </section>
+{% endblock %}
+
