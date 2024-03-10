@@ -9,38 +9,21 @@
 
 
 {% block content %}
-    <header id="main-navigation">
-        <h1>
-            <a id="main-link" href="">
-                DJ-BLOG
-            </a>
-        </h1>
-        <nav>
-            <a href="" id="all-posts-link">All Posts</a>
-        </nav>
-    </header>
     <section id="welcome">
-        <header>
-            <img src="" alt="Edgard - The Author of this blog"/>
+        <header id="header">
+            <img id="python-img" src="{% static "blog/images/descarga.jpg" %}" alt="Edgard - The Author of this blog"/>
             <h2>Django-Blog</h2>
         </header>
-        <p>Hello World 🌐</p>        
+        <p id="title-phrase">Hello World 🌐</p>        
     </section>
     <section id="latest-posts">
-        <h2>Lastest posts</h2>
+        <h2 id="posts-title">Lastest posts</h2>
         
         <ul>
-            <li>
-                <article class="post">
-                    <a>
-                        <img src="" alt="Whatever!"/>
-                        <div class="post__content">
-                            <h3>Hello</h3>
-                            <p>Peace & Love❤️🕊️☮️</p>
-                        </div>
-                    </a>
-                </article>
-            </li>
+            {% include "blog/includes/post.html" %}
+            {% include "blog/includes/post.html" %}
+            {% include "blog/includes/post.html" %}
+            {% include "blog/includes/post.html" %}
         </ul>
     </section>
 

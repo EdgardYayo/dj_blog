@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    All my posts
+{% endblock %}
+
+
+{% block content %}
+    <section id="all-posts">
+        <h2>My collected posts</h2>
+
+        <ul>
+           {% include "blog/includes/post.html" %}
+        </ul>
+    </section>
+{% endblock %}
