@@ -30,22 +30,24 @@ body {
     border-bottom: 1rem solid var(--dark-grey);
 }
 
-#main-navigation > h1, nav,
 #main-link, #all-posts-link {
     color: white;
     text-decoration: none;
-    background-color: black;
-    padding: 1rem;
-    border-radius: 1rem;
-    font-size: 1.5rem;
     font-weight: 100;
-    transform: rotate(-5deg);
-}
-
-#main-link, #all-posts-link {
     transition: all 250ms ease-in-out;
 }
+
+#main-link {
+    font-size: 3rem;
+}
   
+#all-posts-link {
+    font-size: 2rem;
+} 
+
 #main-link:hover, #all-posts-link:hover {
-    transform: rotate(0deg);
+    transition: all 250ms ease-in-out;
+    text-decoration: wavy;
+    text-decoration-color: black;
+    letter-spacing: 1ch;
 }
