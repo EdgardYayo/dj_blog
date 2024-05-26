@@ -41,6 +41,11 @@
     font-style: normal;
 }
 
+.author > a {
+    color: black;
+    text-decoration: none;
+}
+
 .date {
     font-size: 1rem;
 }
@@ -60,4 +65,14 @@
     background-color: white;
     font-size: 2rem;
     word-wrap: break-word;
+}
+
+.tag {
+    color: white;
+    display: block;
+    padding: 5px;
+    border: 2px black solid;
+    background-color: black;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
 }
